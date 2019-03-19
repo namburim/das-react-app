@@ -15,7 +15,7 @@
   "homepage": "https://github.com/namburim/das-react-app#readme",
   "dependencies": {
     "axios": "0.18.0",
-    "bootstrap": "4.2.1",
+    "bootstrap": ">=4.3.1",
     "moment": "2.24.0",
     "react": "16.7.0",
     "react-bootstrap-typeahead": "3.3.6",
