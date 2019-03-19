@@ -1,0 +1,82 @@
+#navBar {
+    background-color: #8496a5;
+    height: 40px;
+    font-size:14px;
+    line-height: 1.42857143;
+    font-weight:700;
+    font-family:'Lato', sans-serif;
+}
+.navBar-nav {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+
+
+.navBar-nav>li {
+    position: relative;
+    display: block;
+}
+.navBar-tab {
+    border-right: 1px solid #407292;
+    border-left: 1px solid #65a5b8;
+}
+#navBar a:link, #navBar a:hover, #navBar a:active, #navBar a:visited {
+    font-family: 'Lato', sans-serif;
+    color: #FFFFFF;
+    text-decoration: none;
+    outline: none;
+}
+.tabPrimary {
+    padding: 10px 0px;
+    position:relative;
+   
+}
+.tabPrimary::before {
+    content: "";
+    width: 0;
+    height: 0;
+    border: 0.8em solid transparent;
+    position: absolute;
+}
+.selectedTab {
+    background-color:#4b80a0;
+}
+.selectedTab::before {
+    bottom: 0px;
+    left: 50%;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 8px solid #fff;
+    width: 0;
+    height: 0;
+    margin-left: -10px;
+}
+
+.navBar-tab-link {
+    position: relative;
+    display: block;
+    padding:10px;
+    outline:none;
+}
+
+@media (min-width: 768px) {
+    .navBar-nav>li {
+        float: left;
+    }
+   
+}
+@media only screen and (max-width: 768px) {
+  .navBar-nav>li {
+        clear: left;
+        display: list-item;
+    }
+     #navBar {
+        height: auto;
+        margin-left:10px;
+    }
+    .selectedTab::before {
+         display: none;
+    }
+}
