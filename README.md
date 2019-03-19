@@ -17,5 +17,5 @@
 <li> run npm install example: <locationOfProject> npm i</li>
 <li>  to start the app <strong>npm start</strong>/li>
 <li>  Go to http://localhost:8089 </li>
-<li>  There is your app :-)</li>
+<li>  Happy clicking :-)</li>
 </ul>
